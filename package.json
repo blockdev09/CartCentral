@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "resolutions": {
-    "@stripe/stripe-js" : "^4.0.0"
+    "@stripe/stripe-js": "^4.0.0"
   },
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
@@ -13,11 +13,10 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
     "@stripe/react-stripe-js": "^2.7.1",
-    "@stripe/stripe-js": "^2.0.0",
+    "@stripe/stripe-js": "^3.5.0",
     "6pp": "^1.2.16",
     "axios": "^1.7.2",
     "chart.js": "^4.4.2",
