@@ -1,0 +1,121 @@
+@media screen and (width<=1800px) {
+  .adminContainer {
+    overflow: auto;
+  }
+  .dashboard {
+    .widgetcontainer,
+    .graphContainer,
+    .transaction-container {
+      justify-content: center;
+      padding: 2rem;
+      flex-wrap: wrap;
+    }
+    .transaction-container {
+      height: unset;
+    }
+  }
+  .product-management {
+    padding: 2rem;
+  }
+}
+
+@media screen and (width<=1250px){
+  .cart{
+    display: block;
+    padding: 2rem;
+    >main{
+      width: 100%;
+    }
+    >aside{
+      width: 100%;
+    }
+  }
+  .cart-item{
+    width: 100%;
+   >img{
+    width: 3rem;
+    height: 3rem;
+   }
+   >div{
+    flex-direction: column;
+    gap: 0;
+   }
+  }
+
+}
+
+@media screen and (width<=1100px) {
+  .home{
+    >div{
+      flex-direction: column;
+      >aside{
+        width: 100%;
+        >ul{
+          flex-direction: row;
+          overflow: auto;
+        }
+      }
+    }
+  }
+  .adminContainer {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media screen and (width<=800px) {
+  .product-management {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    > section {
+      max-width: 400px;
+    }
+  }
+  .chart-container {
+    padding: 0;
+    > h1 {
+      margin: 0;
+      text-align: center;
+    }
+    > section {
+      margin: 8rem auto;
+    }
+  }
+  .dashboard-app-container > section {
+    .couponform,
+    .stopwatch {
+      display: flex;
+      flex-direction: column;
+    }
+    .stopwatch {
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (width<=600px) {
+  .home{
+    >h1{
+      font-size:1.5rem ;
+    }
+    .findmore{
+      font-size: 1.3rem;
+    }
+  }
+  .videoContainer{
+    p{
+      font-size: 1.5rem;
+    }
+  }
+
+}
+
+@media screen and (width<=500px){
+  .home{
+    >h1{
+      font-size: 1rem;
+    }
+    .findmore{
+      font-size: 1rem;
+    }
+  }
+}
