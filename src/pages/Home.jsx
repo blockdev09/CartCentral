@@ -90,7 +90,7 @@ const banners = [coverimage2,coverimage1,coverimage3];
 
 const categories = [
   "Electronics",
-  "Mobile",
+  "Mobiles",
   "Laptops",
   "Books",
   "Fashion",
@@ -170,7 +170,7 @@ const Home = () => {
             <ul>
               {categories.map((i) => (
                 <li>
-                  <Link to={`/search?category=${i.toUpperCase()}`}>{i}</Link>
+                  <Link to={`/search?category=${i.toLowerCase()}`}>{i}</Link>
                 </li>
               ))}
             </ul>
