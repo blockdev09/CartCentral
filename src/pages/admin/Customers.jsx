@@ -45,8 +45,8 @@ const Customers = () => {
   const { isLoading, isError, data, error } = useAllusersQuery(user.user._id);
   const [deleteuser] = useDeleteUsersMutation();
   // console.log(user.user._id);
-  console.log(data?.data?.allUser._id);
-  // const [rows, setRows] = useState([]);
+  // console.log(data?.data?.allUser._id);
+  const [rows, setRows] = useState([]);
   const deletehandler = async (userId) => {
     const res = await deleteuser({ userId, adminUserId: user.user._id });
     toastResponse(res, null, "");
