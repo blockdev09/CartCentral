@@ -29,7 +29,7 @@ const DashboardTable = () => {
   const { isLoading, data, isError, error } = useStatsQuery(user.user._id);
   const [rows, setRows] = useState([]);
   const stats = data?.stats;
-  console.log(stats)
+ 
   useEffect(() => {
     if (data) {
       setRows(
