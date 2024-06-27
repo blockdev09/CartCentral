@@ -7,12 +7,13 @@ import {
 import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { addtoCart } from "../redux/reducer/cartReducer";
+import { useParams, useSearchParams } from "react-router-dom";
 const Search = () => {
   const { data, isError, error } = useCategoriesQuery("");
   const dispatch = useDispatch();
   const a = data?.data;
   const b = a?.categories;
-
+  
   const [search, setSearch] = useState("");
   const [sort, setSort] = useState("");
   const [maxPrice, setMaxprice] = useState(10000000);
@@ -39,10 +40,12 @@ const Search = () => {
     page,
     price: maxPrice,
   });
-
+  //  console.log(c)
   const d = c?.currentData;
   const e = d?.data;
   const f = e?.Products;
+  // const z = f?.map((i)=>i.category)
+  // console.log(f)
   return (
     <div className="product-search-page">
       <aside>
@@ -74,7 +77,7 @@ const Search = () => {
             <option value="">ALL</option>
             {b?.map((i) => (
               <option value={i} key={i}>
-                {i.toUpperCase()}
+                {i}
               </option>
             ))}
           </select>

@@ -5,10 +5,12 @@ export const dashboardApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: `${import.meta.env.VITE_SERVER}/api/v1/dashboard/`,
   }),
+  
   endpoints: (builder) => ({
     stats: builder.query({
       query: (id) => `stats?id=${id}`,
       keepUnusedDataFor: 0,
+     
     }),
     pie: builder.query({
       query: (id) => `pieChart?id=${id}`,
