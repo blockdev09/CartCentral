@@ -135,24 +135,24 @@ const ThirdDiv = ({ location, onPhoneScreen, handleclose }) => {
     <div>
       <h5>Apps</h5>
       <ul>
-        <Li
+        {/* <Li
           url="/admin/app/stopwatch"
           text="Stopwatch"
           location={location}
           Icon={FaStopwatch}
-        />
+        /> */}
         <Li
           url="/admin/app/coupon"
           text="Coupon"
           location={location}
           Icon={RiCoupon3Fill}
         />
-        <Li
+        {/* <Li
           url="/admin/app/toss"
           text="Toss"
           location={location}
           Icon={FaGamepad}
-        />
+        /> */}
       </ul>
       {onPhoneScreen && (
         <button id="close-sidebar" onClick={handleclose}>
