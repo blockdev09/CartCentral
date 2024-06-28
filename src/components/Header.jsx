@@ -11,6 +11,9 @@ import {
 } from "react-icons/fa";
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase";
+import headerlogo from "../assets/images/CartCentral_transparent.png";
+
+// import He  aderlogo from "./Headerlogo";
 const Header = ({ user }) => {
   const [isopen, setisopen] = useState(false);
   const logouthandler = async () => {
@@ -24,8 +27,9 @@ const Header = ({ user }) => {
   };
   return (
     <nav className="header">
+      {/* <Link to={'/'}><Headerlogo /></Link> */}
       <Link onClick={() => setisopen(false)} to={"/"}>
-        Home
+        <img src={headerlogo} alt="image" className="headerlogoo" />  
       </Link>
       <Link onClick={() => setisopen(false)} to={"/Search"}>
         <FaSearch />
@@ -35,9 +39,9 @@ const Header = ({ user }) => {
       </Link>
       {user?.user?._id ? (
         <>
-          <button onClick={() => setisopen((isopen) => !isopen)}>
+          <Link onClick={() => setisopen((isopen) => !isopen)}>
             <FaUser />
-          </button>
+          </Link>
           <dialog open={isopen}>
             <div>
               {user.role === "admin" || (
