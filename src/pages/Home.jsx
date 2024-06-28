@@ -79,6 +79,8 @@ import { addtoCart } from "../redux/reducer/cartReducer";
 import coverimage1 from "../assets/images/virat.jpg";
 import coverimage2 from "../assets/images/boat.jpg";
 import coverimage3 from '../assets/images/watch.jpg'
+import coverimage4 from '../assets/images/oneplus.jpg'
+import coverimage5 from '../assets/images/fossil.jpg'
 import { Slider } from "6pp";
 import { TbTruckDelivery } from "react-icons/tb";
 import { LuShieldCheck } from "react-icons/lu";
@@ -86,7 +88,7 @@ import { motion } from "framer-motion";
 import { FaAnglesDown, FaHeadset } from "react-icons/fa6";
 import video from "../assets/videos/cover.mp4";
 
-const banners = [coverimage2,coverimage1,coverimage3];
+const banners = [coverimage2,coverimage1,coverimage3,coverimage4,coverimage5];
 
 const categories = [
   "Electronics",
