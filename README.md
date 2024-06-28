@@ -31,3 +31,26 @@ TechStacks used:
 3) Database: MongoDB
 4) Authentication : Firebase Authentication
 5) Payment Gateway Integration: Stripe
+
+## Installation
+
+Installation of React icons used in this web application
+
+```bash
+  npm install react-icons --save
+```
+Installation of Chart.js
+
+```bash
+  npm install --save chart.js react-chartjs-2
+```
+
+Installation of react table
+```bash
+  npm i react-table
+```
+
+Installation of Stripe a CommonJS module
+```bash
+  npm i @stripe/stripe-js
+```
