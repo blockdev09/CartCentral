@@ -63,6 +63,34 @@ $color3: rgb(0, 104, 136);
 .header {
   @include flex(row, flex-end, stretch, 2rem);
   padding: 1rem;
+  ////////////////////////////////////////////////////////////
+  .scrolling_text{
+    width: 100%;
+    // border: 2px solid black;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+  }
+
+.text span {
+  margin: 0 40px;
+}
+@keyframes animate_text {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.text {
+  font-size: 25px;
+  font-weight: 600;
+  // text-transform: uppercase;
+  color:black;
+  animation: animate_text 20s linear infinite; 
+}
+//////////////////////////////////////////////////////////////////////
   .headerlogoo{
     height: 40px;
     width: 70px;

@@ -27,9 +27,27 @@ const Header = ({ user }) => {
   };
   return (
     <nav className="header">
+      <div class="scrolling_text">
+        <div class="text">
+          <span>Welcome {user?.user?.name} to CartCentral</span>
+          <span>Welcome {user?.user?.name} to CartCentral</span>
+          <span>Welcome {user?.user?.name} to CartCentral</span>
+          <span>Welcome {user?.user?.name} to CartCentral</span>
+          <span>Welcome {user?.user?.name} to CartCentral</span>
+
+        </div>
+        <div class="text">
+          <span>Welcome {user?.user?.name} to CartCentral</span>
+          <span>Welcome {user?.user?.name} to CartCentral</span>
+          <span>Welcome {user?.user?.name} to CartCentral</span>
+          <span>Welcome {user?.user?.name} to CartCentral</span>
+          <span>Welcome {user?.user?.name} to CartCentral</span>
+
+        </div>
+      </div>
       {/* <Link to={'/'}><Headerlogo /></Link> */}
       <Link onClick={() => setisopen(false)} to={"/"}>
-        <img src={headerlogo} alt="image" className="headerlogoo" />  
+        <img src={headerlogo} alt="image" className="headerlogoo" />
       </Link>
       <Link onClick={() => setisopen(false)} to={"/Search"}>
         <FaSearch />
