@@ -20,7 +20,7 @@ Key features:
 
 4) Order Management: Users can view their order history, track shipments, and manage returns.
 
-5) Admin Dashboard: Admins can manage products, categories, orders, transactionns and users through an intuitive dashboard.
+5) Admin Dashboard: Admins can manage products, categories, orders, transactionns and users through an intuitive dashboard. Only the users with admin role can access this page.
 
 6) Responsive Design: Optimized for both desktop and mobile devices to ensure a smooth shopping experience on any screen size.
 
