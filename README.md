@@ -31,3 +31,7 @@ TechStacks used:
 3) Database: MongoDB
 4) Authentication : Firebase Authentication
 5) Payment Gateway Integration: Stripe
+
+Icons used in this web applications:
+React icons: 
+   Installation: npm install react-icons --save
