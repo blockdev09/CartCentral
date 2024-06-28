@@ -62,7 +62,7 @@ const Header = ({ user }) => {
           </Link>
           <dialog open={isopen}>
             <div>
-              {user.role === "admin" || (
+              {user?.user?.role === "admin" && (
                 <Link to="/admin/dashboard">Admin</Link>
               )}
               <Link to="/orders">Orders</Link>
