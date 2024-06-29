@@ -55,7 +55,7 @@ const AdminSidebar = () => {
             : {}
         }
       >
-        <h2>Logo.</h2>
+        {/* <h2>Logo.</h2> */}
         <FirstDiv location={location} />
         <SecondDIv location={location} />
         <ThirdDiv
